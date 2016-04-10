@@ -17,6 +17,7 @@ rm_cross_toolchain() {
     echo "*/* build_options: jobs=$(nproc)" >> /etc/paludis/options.conf
     cave resolve binutils eclectic-gcc gcc pkg-config -x1
     sed -i '$ d' /etc/paludis/options.conf
+    sed -i "/${target//-/_}/d" /etc/paludis/options.conf
 
     rm -r /usr/$target
     rm -r /var/db/paludis/repositories/cross-installed
