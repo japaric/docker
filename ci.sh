@@ -3,7 +3,7 @@
 set -ex
 
 main() {
-    if [ "$TRAVIS_BRANCH" = "deploy-*" ] && [ "$TRAVIS_PULL_REQUEST" == false ]; then
+    if [ "$TRAVIS_BRANCH" = "deploy-$IMAGE" ] && [ "$TRAVIS_PULL_REQUEST" == false ]; then
         set +x
         docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USER" -p="$DOCKER_PASS"
         set -x
