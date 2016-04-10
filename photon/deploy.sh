@@ -2,13 +2,15 @@
 
 set -ex
 
+tag=$(date +%F)
+
 build() {
     cd $(dirname $0)
-    docker build -t japaric/photon:$(date +%F) -f Dockerfile ..
+    docker build -t japaric/photon:$tag -f Dockerfile ..
 }
 
 test() {
-    docker run japaric/photon sh -c "
+    docker run japaric/photon:$tag sh -c "
         git clone --branch latest --depth 1 https://github.com/spark/firmware
         cd firmware
         make
