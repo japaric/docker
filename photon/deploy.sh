@@ -3,7 +3,7 @@
 set -ex
 
 build() {
-    cd $(basename $0)
+    cd $(dirname $0)
     docker build -t japaric/photon:$(date +%F) -f Dockerfile ..
 }
 
