@@ -8,6 +8,7 @@ env:
     - DOCKER_USER=japaric
     - secure: ScgPD+fqu/+gbPL3yN8dpC+NYISDYKvutzFzE4I2rIm5eUBBbaUBdU07ZfAxCbE2EW8RCKrOZtyVNXtw8+jTWC9h+lTSjhthjZa4ZJZvVgN8joUr2aT0eH5tYHvUYyIjP7eWJg2LLCgz7lsxnFh2aBU+qGiI/nqH3X9kanpPX76le1OC9S+DFiB8dbqihMVTlwK9FS5lllps1I336Ysh60xm45FkgoLVINmJQITYaxEPUavlA9ijh1VwzcAxTRSwDDG9dcnLw4VaRqWoGs8wDjTvZWic5jSz5P1aW1P80JJKtNRirEgMEbeH30R3FgGqyOVO10RWtwXYwd9RUcZOgWDVe7UYYg/zs+Rnu7kMLFBZPAdN7yp5T4NGDcAAbKja7agnzMwZMxSWUlsyDz6p1Bf25QtFwf4Tn4xUzYB/omoF9X218UNbLDbK5qOKomShJnp3XLH3W9rZW4i5wGtu3fopA/ZJYb5gFFYKsuNmlyqRlniboLg8rAj61RYM9kboNR1oCLhiNxaGbmvqc874bXsGOLzrKmveo6jDvxQN8zHmO2rRiuvjKYbVLBB/n+RWmWotSCxdyfl/KWh7ZbWzUWDKao1MHgPCBprhk/TWBFYg4HJO8y0i9wg3yhE5+hrcdtTzP8htdJ0xmEBTdZRudpmtQPpGCCngejINpngdp3c= 
   matrix:
+    - IMAGE=exherbo
     - IMAGE=photon
 
 services:
@@ -19,6 +20,7 @@ script:
 branches:
   only:
     - master
+    - deploy-exherbo
     - deploy-photon
 
 notifications:
