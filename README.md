@@ -1,6 +1,8 @@
+[![Travis](https://travis-ci.org/japaric/docker-photon.svg?branch=master)](https://travis-ci.org/japaric/docker-photon)
+
 # `docker-photon`
 
-> Docker image with all the dependencies needed to work with the [particle] [photon].
+> Docker image with all the dependencies needed to build Rust apps for the [particle] [photon].
 
 [particle]: https://www.particle.io/
 [photon]: https://store.particle.io/collections/photon
