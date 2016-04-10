@@ -14,11 +14,6 @@ env:
 services:
   - docker
 
-addons:
-  apt:
-    packages:
-      - ca-certificates
-
 script:
   - bash ci.sh
 

@@ -6,7 +6,7 @@ tag=$(date +%F)
 
 build() {
     local tarball=exherbo-amd64-current.tar
-    local url=https://dev.exherbo.org/stages/exherbo-amd64-current.tar.xz
+    local url=http://dev.exherbo.org/stages/exherbo-amd64-current.tar.xz
 
     mkdir scratch
     cp $(dirname $0)/uninstall.sh scratch
