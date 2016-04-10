@@ -1,0 +1,15 @@
+sudo: required
+services:
+  - docker
+
+script:
+  - docker build -t photon .
+  - docker run photon /bin/sh -c \
+    "git clone --branch latest --depth 1 https://github.com/spark/firmware; cd firmware; make"
+
+branches:
+  only: master
+
+notifications:
+  email:
+    on_success: never
