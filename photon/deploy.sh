@@ -1,8 +1,10 @@
 #!/bin/bash
 
+set -ex
+
 build() {
-    cd $(dirname $0)
-    docker build -t japaric/photon:$(date +%F) .
+    cd $(basename $0)
+    docker build -t japaric/photon:$(date +%F) -f Dockerfile ..
 }
 
 test() {

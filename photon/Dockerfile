@@ -1,6 +1,6 @@
 FROM ubuntu:15.10
 
-COPY ../passwordless-sudo.sh setup.sh /
+COPY passwordless-sudo.sh photon/setup.sh /
 RUN bash /setup.sh
 
 USER particle
