@@ -20,7 +20,7 @@ test() {
 }
 
 deploy() {
-    docker push japaric/photon
+    docker push japaric/copper
 }
 
 main() {
