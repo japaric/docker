@@ -6,11 +6,13 @@
 
 ## Images
 
-- [Photon](/photon): Docker image with all the dependencies needed to build Rust apps for the
+- [exherbo](/exherbo): Docker image of [Exherbo] snapshots.
+- [photon](/photon): Docker image with all the dependencies needed to build Rust apps for the
 [particle] [photon]. 
 
 [particle]: https://www.particle.io/
 [photon]: https://store.particle.io/collections/photon
+[Exherbo]: https://exherbo.org/
 
 ## License
 
