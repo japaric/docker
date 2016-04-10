@@ -10,7 +10,7 @@ main() {
         bash $IMAGE/deploy.sh
     else
         bash $IMAGE/deploy.sh --test-only
-    if
+    fi
 }
 
 main
