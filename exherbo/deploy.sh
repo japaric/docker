@@ -4,6 +4,18 @@ set -ex
 
 tag=$(date +%F)
 
+mounted=()
+smount() {
+    sudo mount --bind "$1" "$2"
+    mounted+=( "$2")
+}
+
+sumount() {
+    for ((i=${#mounted[@]}-1; i>=0; i--)); do
+        sudo umount ${mounted[i]}
+    done
+}
+
 build() {
     local tarball=exherbo-amd64-current.tar
     local url=http://dev.exherbo.org/stages/exherbo-amd64-current.tar.xz
@@ -13,8 +25,14 @@ build() {
     pushd scratch
 
     curl $url | sudo tar xJp
-    sudo systemd-nspawn sh /uninstall.sh
+    for d in dev dev/pts proc sys; do
+        smount /$d $(pwd)/$d
+    done
+    sudo cp /etc/resolv.conf etc
+    sudo chroot . sh /uninstall.sh
+    sudo chroot . cave sync
     sudo rm uninstall.sh
+    sumount
     sudo tar --numeric-owner -cpf ../$tarball .
 
     popd
