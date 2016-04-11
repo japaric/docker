@@ -7,5 +7,5 @@ USER particle
 WORKDIR /home/particle
 ENV PATH=$PATH:/home/particle/.cargo/bin USER=particle
 CMD rustup default nightly; \
-    cargo install --git https://github.com/japaric/xargo; \
+    cargo install xargo; \
     bash
