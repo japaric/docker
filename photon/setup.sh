@@ -35,6 +35,10 @@ install_deps() {
   ln -s /usr/bin/nodejs /usr/local/bin/node
 
   npm -g install particle-cli
+
+  # for bindgen
+  apt-get install -y --force-yes --no-install-recommends \
+          libclang-dev
 }
 
 install_rustup() {
