@@ -12,7 +12,7 @@ build() {
 test() {
     docker run japaric/copper:$tag sh -c "
         rustup default nightly
-        cargo install --git https://github.com/japaric/xargo
+        cargo install xargo
         git clone --depth 1 https://github.com/japaric/cu
         cd cu
         xargo build --verbose
