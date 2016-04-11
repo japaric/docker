@@ -11,6 +11,7 @@ build() {
 
 test() {
     docker run japaric/photon:$tag sh -c "
+        cargo install --git https://github.com/crabtw/rust-bindgen
         git clone --branch latest --depth 1 https://github.com/spark/firmware
         cd firmware
         make
