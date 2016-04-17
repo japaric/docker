@@ -43,7 +43,7 @@ install_deps() {
 
 install_rustup() {
   as_user "
-    curl https://raw.githubusercontent.com/japaric/multirust-rs/pass-args/rustup-setup.sh -sSf | \
+    curl https://raw.githubusercontent.com/japaric/multirust-rs/no-tty/rustup-setup.sh -sSf | \
       sh -s -- --default-toolchain=nightly -y
   "
 }
