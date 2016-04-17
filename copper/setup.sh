@@ -15,7 +15,7 @@ install_deps() {
 
   # rustup
   apt-get install -y --force-yes --no-install-recommends \
-    ca-certificates curl
+    ca-certificates curl file
 
   apt-get install -y --force-yes --no-install-recommends \
     sudo
