@@ -42,18 +42,10 @@ install_deps() {
 }
 
 install_rustup() {
-  local temp_dir=$(mktemp -d)
-
-  chown $user:$user $temp_dir
-
   as_user "
-    cd $temp_dir
-    curl -O https://static.rust-lang.org/rustup/dist/x86_64-unknown-linux-gnu/rustup-setup
-    chmod +x rustup-setup
-    ./rustup-setup -y
+    curl https://raw.githubusercontent.com/japaric/multirust-rs/pass-args/rustup-setup.sh -sSf | \
+      sh -s -- --default-toolchain=nightly -y
   "
-
-  rm -rf $temp_dir
 }
 
 mk_sudo_passwordless() {
