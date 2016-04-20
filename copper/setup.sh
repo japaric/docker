@@ -15,7 +15,7 @@ install_deps() {
 
   # rustup
   apt-get install -y --force-yes --no-install-recommends \
-    ca-certificates curl
+    ca-certificates curl file
 
   apt-get install -y --force-yes --no-install-recommends \
     sudo
@@ -27,18 +27,7 @@ install_deps() {
 }
 
 install_rustup() {
-  local temp_dir=$(mktemp -d)
-
-  chown $user:$user $temp_dir
-
-  as_user "
-    cd $temp_dir
-    curl -O https://static.rust-lang.org/rustup/dist/x86_64-unknown-linux-gnu/rustup-setup
-    chmod +x rustup-setup
-    ./rustup-setup -y
-  "
-
-  rm -rf $temp_dir
+  as_user "curl https://sh.rustup.rs -sSf | sh -s -- --default-toolchain=nightly -y"
 }
 
 mk_sudo_passwordless() {
