@@ -27,10 +27,7 @@ install_deps() {
 }
 
 install_rustup() {
-  as_user "
-    curl https://raw.githubusercontent.com/japaric/multirust-rs/no-tty/rustup-setup.sh -sSf | \
-      sh -s -- --default-toolchain=nightly -y
-  "
+  as_user "curl https://sh.rustup.rs -sSf | sh -s -- --default-toolchain=nightly -y"
 }
 
 mk_sudo_passwordless() {
