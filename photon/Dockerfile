@@ -6,6 +6,5 @@ RUN bash /setup.sh
 USER particle
 WORKDIR /home/particle
 ENV PATH=$PATH:/home/particle/.cargo/bin USER=particle
-CMD rustup update; \
-    cargo install xargo; \
+CMD rustup default nightly; \
     bash

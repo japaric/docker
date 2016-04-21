@@ -42,7 +42,11 @@ install_deps() {
 }
 
 install_rustup() {
-  as_user "curl https://sh.rustup.rs -sSf | sh -s -- --default-toolchain=nightly -y"
+  as_user '
+    curl https://sh.rustup.rs -sSf | sh -s -- --default-toolchain=stable -y
+    cargo install xargo
+    rustup toolchain remove stable
+'
 }
 
 mk_sudo_passwordless() {
