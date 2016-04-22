@@ -1,4 +1,4 @@
-FROM ubuntu:15.10
+FROM ubuntu:16.04
 
 COPY passwordless-sudo.sh copper/setup.sh /
 RUN bash /setup.sh
