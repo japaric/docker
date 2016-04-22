@@ -26,8 +26,9 @@ install_deps() {
     pkg-config qemu-system-arm
 }
 
-install_rustup() {
+install_rust_stuff() {
   as_user '
+    set -ex
     export PATH="$PATH:/home/'$user'/.cargo/bin"
     export USER='$user'
     curl https://sh.rustup.rs -sSf | sh -s -- --default-toolchain=stable -y
@@ -47,7 +48,7 @@ cleanup() {
 main() {
   mk_user
   install_deps
-  install_rustup
+  install_rust_stuff
   mk_sudo_passwordless
   cleanup
 }

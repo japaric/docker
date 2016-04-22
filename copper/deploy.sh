@@ -11,6 +11,7 @@ build() {
 
 test() {
     docker run japaric/copper:$tag sh -c "
+        set -ex
         rustup default nightly
         git clone --depth 1 https://github.com/japaric/cu
         cd cu
