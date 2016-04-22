@@ -6,10 +6,13 @@
 
 ## Images
 
+- [copper](/copper): Docker image with all the dependencies needed to work with the [copper]
+project.
 - [exherbo](/exherbo): Docker image of [Exherbo] snapshots.
 - [photon](/photon): Docker image with all the dependencies needed to build Rust apps for the
 [particle] [photon]. 
 
+[copper]: https://github.com/japaric/cu
 [particle]: https://www.particle.io/
 [photon]: https://store.particle.io/collections/photon
 [Exherbo]: https://exherbo.org/
