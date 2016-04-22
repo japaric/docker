@@ -8,6 +8,21 @@
 ## Usage
 
 ```
-$ docker run -it japaric/photon:2016-04-09
+$ docker run -it japaric/photon:2016-04-22
 # or use a newer tag. See https://hub.docker.com/r/japaric/photon/tags/
 ```
+
+## Changelog
+
+- 2016-04-22
+  - Based on Ubuntu 16.04 instead of Ubuntu 15.10
+  - Ships with pre-compiled xargo-0.1.1 (built with rust-1.8.0)
+  
+- 2016-04-11
+  - Add rust-bindgen dependencies
+  
+- 2016-04-10
+  - Initial release
+  
+- 2016-04-09
+  - Test run
