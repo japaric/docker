@@ -29,9 +29,9 @@ install_deps() {
 install_rust_stuff() {
   as_user '
     set -ex
-    export PATH="$PATH:/home/'$user'/.cargo/bin"
-    export USER='$user'
     curl https://sh.rustup.rs -sSf | sh -s -- --default-toolchain=stable -y
+    cd ~
+    source ~/.cargo/env
     cargo install xargo
     rustup toolchain remove stable
 '
