@@ -27,7 +27,7 @@ install_deps() {
 
     # for xargo
     apt-get install -y --force-yes --no-install-recommends \
-            gcc libssl-dev
+            gcc libssl-dev libssh2-1-dev
 
     # for particle-cli
     apt-get install -y --force-yes --no-install-recommends \

@@ -24,6 +24,10 @@ install_deps() {
     apt-get install -y --force-yes --no-install-recommends \
             gcc gcc-arm-none-eabi gdb-arm-none-eabi git libc6-dev libcurl4-openssl-dev libssl-dev openocd \
             pkg-config qemu-system-arm
+
+    # xargo
+    apt-get install -y --force-yes --no-install-recommends \
+            libssh2-1-dev
 }
 
 install_rust_stuff() {
