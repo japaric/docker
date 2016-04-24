@@ -27,7 +27,7 @@ install_deps() {
 
     # xargo
     apt-get install -y --force-yes --no-install-recommends \
-            libssh2-1-dev
+            cmake
 }
 
 install_rust_stuff() {
