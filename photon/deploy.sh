@@ -11,10 +11,10 @@ build() {
 
 test() {
     docker run japaric/photon:$tag sh -c "
-        set -ex
-        git clone --branch latest --depth 1 https://github.com/spark/firmware
-        cd firmware
-        make
+set -ex
+git clone --branch latest --depth 1 https://github.com/spark/firmware
+cd firmware
+make
     "
 }
 

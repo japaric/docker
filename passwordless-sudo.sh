@@ -6,7 +6,7 @@ set -ex
 # http://stackoverflow.com/questions/323957/how-do-i-edit-etc-sudoers-from-a-script
 
 if [ -z "$1" ]; then
-  export EDITOR=$0 && visudo
+    export EDITOR=$0 && visudo
 else
-  echo "ALL ALL=(ALL) NOPASSWD: ALL" >> $1
+    echo "ALL ALL=(ALL) NOPASSWD: ALL" >> $1
 fi
