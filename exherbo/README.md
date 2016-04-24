@@ -1,3 +1,6 @@
+[![Docker Stars](https://img.shields.io/docker/stars/japaric/exherbo.svg)](https://hub.docker.com/r/japaric/exherbo/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/japaric/exherbo.svg)](https://hub.docker.com/r/japaric/exherbo/)
+
 # `exherbo`
 
 > Docker image of [Exherbo] snapshots

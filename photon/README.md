@@ -1,3 +1,6 @@
+[![Docker Stars](https://img.shields.io/docker/stars/japaric/photon.svg)](https://hub.docker.com/r/japaric/photon/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/japaric/photon.svg)](https://hub.docker.com/r/japaric/photon/)
+
 # `Photon`
 
 > Docker image with all the dependencies needed to build Rust apps for the [particle] [photon].

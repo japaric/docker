@@ -1,3 +1,6 @@
+[![Docker Stars](https://img.shields.io/docker/stars/japaric/copper.svg)](https://hub.docker.com/r/japaric/copper/)
+[![Docker Pulls](https://img.shields.io/docker/pulls/japaric/copper.svg)](https://hub.docker.com/r/japaric/copper/)
+
 # `copper`
 
 > Docker image with all the dependencies needed to work with the [copper] project.
