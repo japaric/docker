@@ -8,11 +8,14 @@
 ## Usage
 
 ```
-$ docker run -it japaric/photon:2016-04-22
+$ docker run -it japaric/photon:2016-04-24
 # or use a newer tag. See https://hub.docker.com/r/japaric/photon/tags/
 ```
 
 ## Changelog
+
+- 2016-04-24
+  - Bump xargo to 0.1.2
 
 - 2016-04-22
   - Based on Ubuntu 16.04 instead of Ubuntu 15.10
