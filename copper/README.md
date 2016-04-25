@@ -10,14 +10,14 @@
 ## Usage
 
 ```
-$ docker run -it japaric/copper:2016-04-24
+$ docker run -it japaric/copper:2016-04-25
 # or use a newer tag. See https://hub.docker.com/r/japaric/copper/tags/
 ```
 
 ## Changelog
 
-- 2016-04-24
-  - Bump xargo to 0.1.2
+- 2016-04-25
+  - Bump xargo to 0.1.3
 
 - 2016-04-22
   - Based on Ubuntu 16.04 instead of Ubuntu 15.10
