@@ -42,11 +42,12 @@ rustup toolchain remove stable
 }
 
 mk_sudo_passwordless() {
-    bash /passwordless-sudo.sh
+    # See http://stackoverflow.com/a/28382838
+    echo 'ALL ALL=(ALL) NOPASSWD: ALL' | (EDITOR="tee -a" visudo)
 }
 
 cleanup() {
-    rm /{passwordless-sudo,setup}.sh
+    rm /setup.sh
 }
 
 main() {
