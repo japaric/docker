@@ -1,6 +1,6 @@
 FROM ubuntu:16.04
 
-COPY passwordless-sudo.sh photon/setup.sh /
+COPY photon/setup.sh /
 RUN bash /setup.sh
 
 USER particle
