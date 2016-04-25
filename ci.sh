@@ -12,7 +12,7 @@ main() {
         else
             echo 'error: deploy branches must not diverge from master' && exit 1
         fi
-    else
+    elif [[ "$TRAVIS_BRANCH" != deploy-* ]]; then
         bash $IMAGE/deploy.sh --test-only
     fi
 }
