@@ -28,6 +28,10 @@ install_deps() {
     # xargo
     apt-get install -y --force-yes --no-install-recommends \
             cmake
+
+    # compiler-rt
+    apt-get install -y --force-yes --no-install-recommends \
+            libnewlib-dev
 }
 
 install_rust_stuff() {
