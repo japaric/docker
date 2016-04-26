@@ -11,11 +11,14 @@
 ## Usage
 
 ```
-$ docker run -it japaric/photon:2016-04-25
+$ docker run -it japaric/photon:2016-04-26
 # or use a newer tag. See https://hub.docker.com/r/japaric/photon/tags/
 ```
 
 ## Changelog
+
+- 2016-04-25
+  - Fix passwordless sudo
 
 - 2016-04-25
   - Bump xargo to 0.1.3

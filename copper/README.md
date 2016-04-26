@@ -10,11 +10,15 @@
 ## Usage
 
 ```
-$ docker run -it japaric/copper:2016-04-25
+$ docker run -it japaric/copper:2016-04-26
 # or use a newer tag. See https://hub.docker.com/r/japaric/copper/tags/
 ```
 
 ## Changelog
+
+- 2016-04-26
+  - Fix passwordless sudo
+  - Install newlib headers which are required to cross compile compiler-rt with arm-none-eabi-gcc
 
 - 2016-04-25
   - Bump xargo to 0.1.3
