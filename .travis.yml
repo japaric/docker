@@ -10,6 +10,7 @@ env:
   matrix:
     - IMAGE=copper
     - IMAGE=exherbo
+    - IMAGE=heroku
     - IMAGE=photon
 
 services:
