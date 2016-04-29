@@ -20,11 +20,13 @@ script:
 
 branches:
   only:
-    - master
+    - auto
     - deploy-copper
     - deploy-exherbo
     - deploy-photon
+    - master
 
 notifications:
   email:
     on_success: never
+  webhooks: http://homu.herokuapp.com/travis
