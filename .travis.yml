@@ -23,6 +23,7 @@ branches:
     - auto
     - deploy-copper
     - deploy-exherbo
+    - deploy-heroku
     - deploy-photon
     - master
 
