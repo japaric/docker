@@ -14,7 +14,7 @@ install_deps() {
     apt-get update
 
     apt-get install -y --no-install-recommends \
-            ca-certificates cmake curl file gcc gdb git make python sudo
+            ca-certificates cmake curl file g++ gdb git libc6-dev make python sudo
 }
 
 mk_sudo_passwordless() {
