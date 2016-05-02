@@ -12,6 +12,7 @@ env:
     - IMAGE=exherbo
     - IMAGE=heroku
     - IMAGE=photon
+    - IMAGE=rust
 
 services:
   - docker
@@ -26,6 +27,7 @@ branches:
     - deploy-exherbo
     - deploy-heroku
     - deploy-photon
+    - deploy-rust
     - master
 
 notifications:

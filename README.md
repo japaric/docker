@@ -12,6 +12,8 @@ project.
 - [heroku](/heroku): Docker image with a pre-installe [Heroku] toolbelt.
 - [photon](/photon): Docker image with all the dependencies needed to build Rust apps for the
 [particle] [photon]. 
+- [rust](/rust): Docker image with all the dependencies required to bootstrap a native Rust
+compiler/standard libraries.
 
 [copper]: https://github.com/japaric/cu
 [Exherbo]: https://exherbo.org/
