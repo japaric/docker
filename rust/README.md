@@ -11,11 +11,11 @@ libraries.
 ## Usage
 
 ```
-$ docker run -it japaric/rust:2016-05-02
+$ docker run -it japaric/rust:2016-05-03
 # or use a newer tag. See https://hub.docker.com/r/japaric/rust/tags/
 ```
 
 ## Changelog
 
-- 2016-05-02
+- 2016-05-03
   - Initial release
