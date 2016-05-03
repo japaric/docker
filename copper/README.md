@@ -10,11 +10,14 @@
 ## Usage
 
 ```
-$ docker run -it japaric/copper:2016-04-26
+$ docker run -it japaric/copper:2016-05-02
 # or use a newer tag. See https://hub.docker.com/r/japaric/copper/tags/
 ```
 
 ## Changelog
+
+- 2016-05-02
+  - Set the CC and AR env variables needed to build the compiler-rt crate.
 
 - 2016-04-26
   - Fix passwordless sudo
