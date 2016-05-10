@@ -16,6 +16,10 @@ $ docker run -it japaric/copper:2016-05-03
 
 ## Changelog
 
+- 2016-05-10
+  - Drop the CC and AR env variables as they are no longer needed by the compiler-rt crate. (For the
+    targets that copper cares about).
+
 - 2016-05-03
   - Set the CC and AR env variables needed to build the compiler-rt crate.
 
