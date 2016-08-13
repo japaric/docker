@@ -3,9 +3,9 @@ set -ex
 install_deps() {
     apt-get update
 
-    apt-get install -y --force-yes --no-install-recommends \
+    apt-get install -y --no-install-recommends \
             `# rustup` ca-certificates curl file \
-            `# xargo` libssh2-1 \
+            `# xargo` libcurl4-openssl-dev libssh2-1 \
             `# aarch64-unknown-linux-gnu` gcc-aarch64-linux-gnu libc6-dev-arm64-cross \
             `# arm*-unknown-linux-gnueabi` gcc-arm-linux-gnueabi libc6-dev-armel-cross \
             `# arm*-unknown-linux-gnueabihf` gcc-arm-linux-gnueabihf libc6-dev-armhf-cross \
