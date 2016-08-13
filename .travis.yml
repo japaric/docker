@@ -13,6 +13,7 @@ env:
     - IMAGE=heroku
     - IMAGE=photon
     - IMAGE=rust
+    - IMAGE=rustc-builtins
 
 services:
   - docker
@@ -28,6 +29,7 @@ branches:
     - deploy-heroku
     - deploy-photon
     - deploy-rust
+    - deploy-rustc-builtins
     - master
 
 notifications:
