@@ -1,8 +1,8 @@
 FROM ubuntu:16.04
 
 COPY rust-uclibc/setup.sh \
-    rust-uclibc/mips-unknown-linux-uclibc \
-    rust-uclibc/mipsel-unknown-linux-uclibc \
+    rust-uclibc/mips-unknown-linux-uclibc.config \
+    rust-uclibc/mipsel-unknown-linux-uclibc.config \
     /
 RUN bash /setup.sh
 
