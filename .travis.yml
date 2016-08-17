@@ -13,6 +13,7 @@ env:
     - IMAGE=heroku
     - IMAGE=photon
     - IMAGE=rust
+    - IMAGE=rust-uclibc
     - IMAGE=rustc-builtins
 
 services:
@@ -29,6 +30,7 @@ branches:
     - deploy-heroku
     - deploy-photon
     - deploy-rust
+    - deploy-rust-uclibc
     - deploy-rustc-builtins
     - master
 
