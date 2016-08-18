@@ -54,7 +54,7 @@ mkdir ~/ct
 pushd ~/ct
 cp /${1}.config .config
 ct-ng oldconfig
-ct-ng build
+ct-ng build --quiet
 popd
 rm -rf ~/ct
 "
