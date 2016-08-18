@@ -66,7 +66,9 @@ rm -rf ~/ct
 }
 
 install_rustup() {
-    curl https://sh.rustup.rs -sSf | sh -s -- -y
+    as_user "
+curl https://sh.rustup.rs -sSf | sh -s -- -y
+"
 }
 
 configure_cargo() {
