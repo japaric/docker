@@ -6,7 +6,7 @@ main() {
             set +x
             docker login -e="$DOCKER_EMAIL" -u="$DOCKER_USER" -p="$DOCKER_PASS"
             set -x
-            bash $IMAGE/deploy.sh
+            travis_wait bash $IMAGE/deploy.sh
         else
             echo 'error: deploy branches must not diverge from master' && exit 1
         fi
