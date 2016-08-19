@@ -4,7 +4,7 @@ set -ex
 
 fetch_sources() {
     # Switch to rust-lang/rust when rust-lang/rust#35734 lands
-    git clone --depth 1 --branch mips-uclibc https://github.com/japaric/rust ~/rust
+    git clone --depth 1 https://github.com/rust-lang/rust ~/rust
     git clone --branch uclibc  https://github.com/japaric/libc ~/libc
 }
 
