@@ -4,6 +4,7 @@ install_deps() {
     apt-get update
 
     apt-get install -y --no-install-recommends \
+            `# gist` libssl-dev \
             `# rustup` ca-certificates curl file \
             `# xargo` libcurl4-openssl-dev libssh2-1 \
             `# aarch64-unknown-linux-gnu` gcc-aarch64-linux-gnu libc6-dev-arm64-cross \
@@ -22,6 +23,7 @@ install_deps() {
 install_rust() {
     curl https://sh.rustup.rs -sSf | sh -s -- -y
     source ~/.cargo/env
+    cargo install gist
     rustup toolchain remove stable
 }
 
