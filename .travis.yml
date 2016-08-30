@@ -14,7 +14,6 @@ env:
     - IMAGE=photon
     - IMAGE=rust
     - IMAGE=rust-uclibc
-    - IMAGE=rustc-builtins
 
 services:
   - docker
@@ -31,7 +30,6 @@ branches:
     - deploy-photon
     - deploy-rust
     - deploy-rust-uclibc
-    - deploy-rustc-builtins
     - master
 
 notifications:
